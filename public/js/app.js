@@ -14,7 +14,7 @@ const fetchData = (address) => {
 weatherForm.addEventListener("submit", async (e) => {
   e.preventDefault();
   const location = search.value;
-  messageSucess.innerHTML = 'Loadding...';
+  messageSucess.innerHTML = 'Loadding.....';
   messageError.innerHTML = '';
   const data = await fetchData(location);
   if(data.errorMessage){
