@@ -5,7 +5,7 @@ const messageError = document.querySelector("#message-error");
 
 const fetchData = (address) => {
   return fetch(
-    "http://localhost:3000/weather?address=" + encodeURIComponent(address)
+    "/weather?address=" + encodeURIComponent(address)
   ).then((data) => {
     return data.json();
   });
