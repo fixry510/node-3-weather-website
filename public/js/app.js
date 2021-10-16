@@ -22,6 +22,7 @@ weatherForm.addEventListener("submit", async (e) => {
   }else if(data.err){
       messageError.innerHTML = data.err;
   }else{
-      messageSucess.innerHTML = data.forecast + " "+ data.location;
+      messageSucess.innerHTML = data.forecast;
+      messageError.innerHTML = data.location;
   }
 });
